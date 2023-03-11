@@ -8,9 +8,11 @@ public class UserRegistration {
     static final int ENTER_EMAIL = 3;
     static final int ENTER_MOBILE_NUMBER = 4;
     static final int ENTER_PASSWORD = 5;
+    static final int EMAIL_VALIDATION = 6;
 
     public static void userRegistration() {
-        System.out.println("Enter the choice 1.Enter first name 2.Enter last name 3.Enter email 4.Mobile Number 5.Enter Password");
+        System.out.println("Enter the choice 1.Enter first name 2.Enter last name 3.Enter email 4.Mobile Number 5.Enter Password" +
+                "6.For checking email validation");
         Scanner scanner = new Scanner(System.in);
         int choice = scanner.nextInt();
         UserRegistrationCases userCases = new UserRegistrationCases();
@@ -33,6 +35,10 @@ public class UserRegistration {
 
             case ENTER_PASSWORD:
                 userCases.enterPassword();
+                break;
+
+            case EMAIL_VALIDATION:
+                userCases.emailValidation();
                 break;
         }
     }
