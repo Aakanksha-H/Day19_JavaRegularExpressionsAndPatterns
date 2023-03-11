@@ -24,5 +24,11 @@ public class UserRegistrationCases {
         String email = scanner.next();
         System.out.println(Pattern.matches("^[a-zA-Z\\d+_.-]+@[bl.co|bl.in]+$", email));
     }
+
+    public void enterMobileNumber() {
+        System.out.println("Enter the Mobile Number\n" + "Hint: Country code follow 10 digit number");
+        String mobileNumber = scanner.nextLine();
+        System.out.println(Pattern.matches("^[91]{2}[\\s][6-9][0-9]{9}$", mobileNumber));
+    }
 }
 
