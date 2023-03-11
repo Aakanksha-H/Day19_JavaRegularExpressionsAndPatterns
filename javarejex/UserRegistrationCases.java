@@ -32,9 +32,10 @@ public class UserRegistrationCases {
     }
 
     public void enterPassword() {
-        System.out.println("Enter password \n" + "Hint: Password should have minimum 8 Characters and at least 1 Upper Case");
+        System.out.println("Enter password \n" + "Hint: Password should have minimum 8 Characters and at least 1 Upper Case letter" +
+                "and at least 1 numeric number");
         String password = scanner.next();
-        System.out.println(Pattern.matches("(?=.*[A-Z])[A-Za-z\\d@$!%*#?&]{8,}", password));
+        System.out.println(Pattern.matches("^(?=.*[A-Z])(?=.*\\d)[A-Za-z\\d@$!%*#?&]{8,}", password));
     }
 }
 
