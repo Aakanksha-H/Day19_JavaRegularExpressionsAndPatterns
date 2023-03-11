@@ -17,5 +17,12 @@ public class UserRegistrationCases {
         String lastName = scanner.next();
         System.out.println(Pattern.matches("^[A-Z]{1}[a-z]{2,}$", lastName));
     }
+
+    public void enterValidEmail() {
+        System.out.println("Enter the Email\n" + "Hint: Email has 3 mandatory parts (abc, bl & co) "
+                + "and 2 optional (xyz & in) with " + "precise @ and . positions");
+        String email = scanner.next();
+        System.out.println(Pattern.matches("^[a-zA-Z\\d+_.-]+@[bl.co|bl.in]+$", email));
+    }
 }
 
