@@ -10,8 +10,7 @@ public class UserRegistration {
     static final int ENTER_PASSWORD = 5;
 
     public static void userRegistration() {
-        System.out.println("Enter the choice 1.Enter first name 2.Enter last name 3.Enter email 4.Mobile Number+\n" +
-                           "5.Enter Password");
+        System.out.println("Enter the choice 1.Enter first name 2.Enter last name 3.Enter email 4.Mobile Number 5.Enter Password");
         Scanner scanner = new Scanner(System.in);
         int choice = scanner.nextInt();
         UserRegistrationCases userCases = new UserRegistrationCases();
