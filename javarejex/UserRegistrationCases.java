@@ -30,5 +30,11 @@ public class UserRegistrationCases {
         String mobileNumber = scanner.nextLine();
         System.out.println(Pattern.matches("^[91]{2}[\\s][6-9][0-9]{9}$", mobileNumber));
     }
+
+    public void enterPassword() {
+        System.out.println("Enter password \n" + "Hint: minimum 8 Characters");
+        String password = scanner.next();
+        System.out.println(Pattern.matches("^[a-zA-Z0-9!@#$%^&*]{8,}$", password));
+    }
 }
 
